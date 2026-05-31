@@ -1,7 +1,6 @@
-import { useTheme, ThemeToggle } from 'manicjs/theme';
-import { useRef } from 'react';
 import { Sun, MoonStar, ArrowUp, SlidersHorizontal } from 'lucide-react';
-import { Link, ViewTransitions } from 'manicjs';
+import { Link, ViewTransitions, useTheme, ThemeToggle, Image } from 'manicjs';
+import { useRef } from 'react';
 
 const SUBTITLE_STYLE = { viewTransitionName: 'subtitle' };
 
@@ -12,7 +11,7 @@ export default function Landing() {
   return (
     <main>
       <header className="fixed top-0 left-0 right-0 flex items-center justify-between w-full px-12 py-6 z-50">
-        <img
+        <Image
           src={isDark ? '/assets/wordmark.svg' : '/assets/wordmark-dark.svg'}
           alt=""
           className="h-6 opacity-0"
@@ -27,7 +26,7 @@ export default function Landing() {
 
       <section className="px-22 flex items-center justify-center flex-col h-[80vh]">
         <ViewTransitions.div name="logo">
-          <img
+          <Image
             src={isDark ? '/assets/wordmark.svg' : '/assets/wordmark-dark.svg'}
             alt="Wordmark"
             className="max-md:w-54 max-sm:w-54 transition-all duration-250"
@@ -44,14 +43,14 @@ export default function Landing() {
           >
             Chat
           </Link>
-          <a
+          <Link
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline flex items-center justify-center"
-            href="https://github.com/rahuletto/manic/tree/main/examples"
+            to="https://github.com/manic-js/example-starter"
           >
             Explore other examples ↗
-          </a>
+          </Link>
         </div>
 
         <Link
