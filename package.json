@@ -22,7 +22,7 @@
     "ai": "^6.0.3",
     "hono": "^4.12.18",
     "lucide-react": "^0.562.0",
-    "manicjs": "^1.1.0",
+    "manicjs": "^1.1.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "streamdown": "^1.6.10",
